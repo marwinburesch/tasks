@@ -1,6 +1,6 @@
 {
   "tagname-lowercase": true,
-  "attr-lowercase": true,
+  "attr-lowercase": ["viewBox"],
   "attr-value-double-quotes": true,
   "tag-pair": true,
   "spec-char-escape": true,
@@ -13,8 +13,10 @@
   "alt-require": true,
   "attr-unsafe-chars": true,
   "inline-style-disabled": true,
-  "style-disabled": true,
+  "style-disabled": false,
+  "doctype-first": false,
   "doctype-html5": true,
   "space-tab-mixed-disabled": "true",
-  "inline-script-disabled": true
+  "inline-script-disabled": true,
+  "tagname-lowercase": ["clipPath"]
 }
