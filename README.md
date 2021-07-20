@@ -1,6 +1,8 @@
-# Storybook HTML
+# Tasks App
 
-This repository demonstrates how to use [Storybook](https://storybook.js.org/) for HTML and CSS/SCSS. You can use this repository as template.
+![coverImage](./documentation/assets/projectCover.jpg)
+
+We are creating a simple task app with [Storybook](https://storybook.js.org/) for HTML and CSS/SCSS. The design is based on this [XD Design](https://xd.adobe.com/view/b538709f-c03e-4bc6-8519-f3dc19773438-e06b/specs/). The design was created [by Anshul Dawar on XD Guru](https://www.xdguru.com/todo-task-app-xd-concept/)
 
 ## Getting Started
 
