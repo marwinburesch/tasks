@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--ff-primary);
   margin: 0;
 }
 
@@ -34,5 +34,5 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: var(--ff-primary);
 }
