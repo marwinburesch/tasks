@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap");
 
 *,
 *::after,
@@ -15,7 +15,6 @@
   --clr-text-secondary: #111;
   --clr-content-passive: #d4d4d4;
   --fw-primary: 400;
-  --fw-primary-bold: 700;
   --fw-secondary: 600;
 }
 
