@@ -1,0 +1,10 @@
+.action-button {
+  width: 10rem;
+  height: 100px;
+  background-color: var(--clr-primary);
+  border: none;
+  border-top-left-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
