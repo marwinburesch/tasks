@@ -13,6 +13,7 @@
   --clr-secondary: #161060;
   --clr-text-primary: #393939;
   --clr-text-secondary: #111;
+  --clr-text-passive: hsla(0, 0%, 0%, 0.55);
   --clr-content-passive: #fbfbfb;
   --fw-primary: 400;
   --fw-secondary: 600;
