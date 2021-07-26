@@ -1,5 +1,11 @@
-.form {
+.addTaskForm {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.addTaskForm__submit {
+  border: none;
+  width: 100%;
+  background-color: var(--clr-primary);
 }
