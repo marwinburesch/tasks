@@ -7,5 +7,5 @@ export default {
   parameters: { layout: "centered" },
 };
 
-export const regular = () => iconButtonMenu;
+export const menu = () => iconButtonMenu;
 export const notification = () => iconButtonNotification;
