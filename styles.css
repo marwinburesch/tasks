@@ -3,3 +3,29 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+}
+
+.headerMenu {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
+
+.iconButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
