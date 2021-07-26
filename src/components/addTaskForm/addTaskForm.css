@@ -5,7 +5,10 @@
 }
 
 .addTaskForm__submit {
+  font-size: 1.2rem;
   border: none;
   width: 100%;
+  padding: 2rem;
   background-color: var(--clr-primary);
+  color: #fff;
 }
