@@ -1,4 +1,4 @@
-.taskNav__link {
+.taskNavLink {
   color: var(--clr-text-passive);
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -7,6 +7,6 @@
   letter-spacing: 0.2em;
 }
 
-.taskNav__link--active {
+.taskNavLink--active {
   color: var(--clr-primary);
 }
