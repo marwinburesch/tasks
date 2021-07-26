@@ -1,5 +1,6 @@
 import "./iconButton.css";
 import iconButtonMenu from "./iconButton-menu.html";
+import iconButtonNotification from "./iconButton-notification.html";
 
 export default {
   title: "Components/IconButton",
@@ -7,3 +8,4 @@ export default {
 };
 
 export const regular = () => iconButtonMenu;
+export const notification = () => iconButtonNotification;
