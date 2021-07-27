@@ -20,7 +20,7 @@
 }
 
 body {
-  color: var(--clr-primary);
+  color: var(--clr-text-primary);
   font-family: var(--ff-primary);
   margin: 0;
   height: 100vh;
