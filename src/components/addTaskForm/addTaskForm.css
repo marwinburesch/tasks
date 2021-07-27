@@ -15,6 +15,18 @@
   padding: 0;
 }
 
+.addTaskForm__textInput {
+  font-size: 2.5rem;
+  padding: 0.5em 0.3em 0.5em 0.1em;
+  max-width: 100%;
+  border: none;
+  border-bottom: 0.1em solid var(--clr-content-passive);
+}
+
+.addTaskForm__textInput::placeholder {
+  color: var(--clr-content-passive);
+}
+
 .addTaskForm__fieldset {
   border: none;
   padding: 0;
