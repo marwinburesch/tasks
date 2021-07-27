@@ -8,6 +8,35 @@
   margin-left: 1.5em;
 }
 
+.addTaskForm__description {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 0;
+}
+
+.addTaskForm__fieldset {
+  border: none;
+  padding: 0;
+  margin: 3em 0 0 0;
+}
+
+.addTaskForm__radioGroup {
+  border: none;
+  background-color: var(--clr-content-passive);
+  margin-top: 1em;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.addTaskForm__radio {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
 .addTaskForm__submit {
   font-size: 1.2rem;
   border: none;

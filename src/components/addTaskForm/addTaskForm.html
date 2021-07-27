@@ -1,20 +1,40 @@
 <form class="addTaskForm">
   <section class="addTaskForm__userInput">
-    <label>Description<input type="text" name="description" /></label>
-    <fieldset>
-      <legend>When</legend>
-      <label>
-        Today
-        <input type="radio" name="when" id="when_today" />
-      </label>
-      <label>
-        Tomorrow
-        <input type="radio" name="when" id="when_tomorrow" />
-      </label>
-      <label>
-        Select Date
-        <input type="radio" name="when" id="when_select" />
-      </label>
+    <label
+      ><span class="addTaskForm__description">Description</span
+      ><input type="text" name="description"
+    /></label>
+    <fieldset class="addTaskForm__fieldset">
+      <legend class="addTaskForm__description">When</legend>
+      <div class="addTaskForm__radioGroup">
+        <label class="addTaskForm__radioLabel">
+          Today
+          <input
+            class="addTaskForm__radio"
+            type="radio"
+            name="when"
+            id="when_today"
+          />
+        </label>
+        <label class="addTaskForm__radioLabel">
+          Tomorrow
+          <input
+            class="addTaskForm__radio"
+            type="radio"
+            name="when"
+            id="when_tomorrow"
+          />
+        </label>
+        <label class="addTaskForm__radioLabel">
+          Select Date
+          <input
+            class="addTaskForm__radio"
+            type="radio"
+            name="when"
+            id="when_select"
+          />
+        </label>
+      </div>
     </fieldset>
   </section>
   <div>
