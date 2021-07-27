@@ -1,0 +1,32 @@
+<form class="addTaskForm">
+  <section class="addTaskForm__userInput">
+    <label
+      ><span class="addTaskForm__description">Description</span
+      ><input
+        class="addTaskForm__textInput"
+        type="text"
+        name="description"
+        placeholder="Enter text"
+    /></label>
+    <fieldset class="addTaskForm__fieldset">
+      <legend class="addTaskForm__description">When</legend>
+      <div class="addTaskForm__radioGroup">
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Today</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Tomorrow</span>
+        </label>
+        <label>
+          <input class="addTaskForm__radio" type="radio" name="when" />
+          <span class="addTaskForm__radioLabel">Select Date</span>
+        </label>
+      </div>
+    </fieldset>
+  </section>
+  <div>
+    <input class="addTaskForm__submit" type="submit" value="Add task" />
+  </div>
+</form>
