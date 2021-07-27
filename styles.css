@@ -104,3 +104,14 @@ textarea {
 .taskItem__checkbox:checked + .taskItem__labelText {
   text-decoration: line-through 0.14em var(--clr-primary);
 }
+
+.actionButton {
+  width: 10rem;
+  height: 100px;
+  background-color: var(--clr-primary);
+  border: none;
+  border-top-left-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
