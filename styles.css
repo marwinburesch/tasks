@@ -20,6 +20,7 @@
 }
 
 body {
+  color: var(--clr-primary);
   font-family: var(--ff-primary);
   margin: 0;
   height: 100vh;
@@ -40,6 +41,7 @@ textarea {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr 4fr 1fr;
 }
+
 .menuButton {
   grid-column: 1/3;
   justify-self: start;
