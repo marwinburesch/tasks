@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <button aria-label="open menu" class="iconButton menuButton">
+        <img src="./assets/menuIcon.svg" alt="Menu Icon" />
+      </button>
+      <div class="headerMenu">
+        <h1>Tasks</h1>
+        <button aria-label="show notifications" class="iconButton">
+          <img src="./assets/notificationIcon.svg" alt="Notification Bell" />
+        </button>
+      </div>
+
+      <section class="dateSelector">
+        <a href="#" class="taskNavLink">Today</a>
+        <a href="#" class="taskNavLink">Tomorrow</a>
+        <a href="#" class="taskNavLink">This Week</a>
+      </section>
+      <section class="taskList">
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Book appointment with Jared</span
+          >
+        </label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Walk the dog</span
+          >
+        </label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Eat lunch and walk</span
+          >
+        </label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Cook a delicious dinner for everyone</span
+          >
+        </label>
+        <label class="taskItem">
+          <input class="taskItem__checkbox" type="checkbox" name="tasks" /><span
+            class="taskItem__labelText"
+            >Go to Heidepark with the Family on every weekend of the year</span
+          >
+        </label>
+      </section>
+      <button aria-label="Add new task" class="actionButton">
+        <img src="./assets/plusIcon.svg" alt="Plus Symbol" />
+      </button>
+    </main>
+  </body>
+</html>
