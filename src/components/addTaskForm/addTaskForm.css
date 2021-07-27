@@ -37,6 +37,10 @@
   opacity: 0;
 }
 
+.addTaskForm__radio:checked + .addTaskForm__radioLabel {
+  color: var(--clr-primary);
+}
+
 .addTaskForm__submit {
   font-size: 1.2rem;
   border: none;
