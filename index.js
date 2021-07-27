@@ -1,3 +1,13 @@
-const message = "Hello Students!";
+const menuButton = document.querySelector(".menuButton");
+menuButton.onclick = sendAlert;
 
-alert(message);
+function sendAlert() {
+  alert("Hello World!");
+}
+
+const taskList = document.querySelector(".taskList");
+
+const newTask = document.createElement("p");
+newTask.innerText = "Example Task";
+
+taskList.append(newTask);
