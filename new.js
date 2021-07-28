@@ -10,7 +10,7 @@ function alertSelectedDate() {
   alert(checkedDateInput.value);
 }
 
-// Display sleceted date onclick, using submit button
+// Display sleceted date onsubmit, using submit button
 const form = document.querySelector(".addTaskForm");
 
 form.onsubmit = function (event) {
