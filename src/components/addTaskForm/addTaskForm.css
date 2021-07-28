@@ -20,11 +20,11 @@
   padding: 0.5em 0.3em 0.5em 0.1em;
   max-width: 100%;
   border: none;
-  border-bottom: 0.1em solid var(--clr-content-passive);
+  border-bottom: 0.1em solid var(--clr-text-passive);
 }
 
 .addTaskForm__textInput::placeholder {
-  color: var(--clr-content-passive);
+  color: var(--clr-text-passive);
 }
 
 .addTaskForm__fieldset {
