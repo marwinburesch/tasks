@@ -24,15 +24,30 @@
             <legend class="addTaskForm__description">When</legend>
             <div class="addTaskForm__radioGroup">
               <label>
-                <input class="addTaskForm__radio" type="radio" name="when" />
+                <input
+                  class="addTaskForm__radio"
+                  type="radio"
+                  name="when"
+                  value="today"
+                />
                 <span class="addTaskForm__radioLabel">Today</span>
               </label>
               <label>
-                <input class="addTaskForm__radio" type="radio" name="when" />
+                <input
+                  class="addTaskForm__radio"
+                  type="radio"
+                  name="when"
+                  value="tomorrow"
+                />
                 <span class="addTaskForm__radioLabel">Tomorrow</span>
               </label>
               <label>
-                <input class="addTaskForm__radio" type="radio" name="when" />
+                <input
+                  class="addTaskForm__radio"
+                  type="radio"
+                  name="when"
+                  value="selectDate"
+                />
                 <span class="addTaskForm__radioLabel">Select Date</span>
               </label>
             </div>
@@ -42,6 +57,8 @@
           <input class="addTaskForm__submit" type="submit" value="Add task" />
         </div>
       </form>
+      <button class="addTask__alternativeButton">Add alternatively</button>
     </main>
+    <script defer="true" src="new.js"></script>
   </body>
 </html>
