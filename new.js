@@ -17,16 +17,19 @@ form.onsubmit = function (event) {
   // Prevent the default functionality of the submit event, which is reloading the page
   event.preventDefault();
 
+  const newTask = { title: "", date: "", isDone: false };
+
   const checkedDateInput = document.querySelector(
     ".addTaskForm__radio:checked"
   );
   const textInput = document.querySelector(".addTaskForm__textInput");
 
-  const selectedDate = checkedDateInput.value;
-  const taskName = textInput.value;
+  newTask.title = textInput.value;
+  newTask.date = checkedDateInput.value;
 
   // template literals
   console.log(
-    `Hi you entered "${selectedDate}" as date and "${taskName}" as description`
+    `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
   );
+  console.log(newTask);
 };
