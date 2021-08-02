@@ -1,3 +1,8 @@
+import {
+  parseJSONFromLocalStorage,
+  stringifyJSONToLocalStorage,
+} from "./utils/localstorage.js";
+
 // Display sleceted date onclick, button not part of form
 const altButton = document.querySelector(".addTask__alternativeButton");
 
@@ -27,9 +32,15 @@ form.onsubmit = function (event) {
   newTask.title = textInput.value;
   newTask.date = checkedDateInput.value;
 
-  // template literals
-  console.log(
-    `Hi you entered "${newTask.date}" as date and "${newTask.title}" as description`
-  );
-  console.log(newTask);
+  //Get oldTasks from localStorage with key "tasks"
+  const oldTasks = parseJSONFromLocalStorage("tasks", []);
+
+  //Add newTask to oldTasks
+  const newTasks = [...oldTasks, newTask];
+
+  //Save newTasks to localStorage with key "tasks"
+  stringifyJSONToLocalStorage("tasks", newTasks);
+
+  //Push to the taskList
+  location.href = "/";
 };
