@@ -3,6 +3,15 @@ import {
   stringifyJSONToLocalStorage,
 } from "./utils/localstorage.js";
 
+const dateFilterRadioButtons = document.querySelectorAll(
+  ".dateSelector__radio"
+);
+
+dateFilterRadioButtons.forEach((dateFilterRadioButton) => {
+  dateFilterRadioButton.onchange = () =>
+    renderTaskList(dateFilterRadioButton.value);
+});
+
 function completeTask(taskName, completed) {
   const tasks = parseJSONFromLocalStorage("tasks", []);
   const task = tasks.find((task) => task.title === taskName);
