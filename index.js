@@ -1,37 +1,8 @@
-const menuButton = document.querySelector(".menuButton");
-menuButton.onclick = sendAlert;
-
-function sendAlert() {
-  alert("Hello World!");
-}
+import { parseJSONFromLocalStorage } from "./utils/localstorage.js";
 
 const taskList = document.querySelector(".taskList");
-// Placeholder
 
-const tasks = [
-  {
-    title: "Get groceries",
-    date: "Tomorrow",
-    isDone: true,
-  },
-  {
-    title: "Walk the dog",
-    date: "Today",
-    isDone: false,
-  },
-  {
-    title: "Go to sleep",
-    date: "Today",
-    isDone: false,
-  },
-];
-
-/*
-Also valid in the .map:
-function (task) {
-  return createTaskListItem(task)
-}
-*/
+const tasks = parseJSONFromLocalStorage("tasks", []);
 
 const taskListItems = tasks.map((task) => createTaskListItem(task));
 
