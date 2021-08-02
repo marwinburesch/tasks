@@ -3,14 +3,6 @@ import {
   stringifyJSONToLocalStorage,
 } from "./utils/localstorage.js";
 
-const taskList = document.querySelector(".taskList");
-
-const tasks = parseJSONFromLocalStorage("tasks", []);
-
-const taskListItems = tasks.map((task) => createTaskListItem(task));
-
-taskList.append(...taskListItems);
-
 function completeTask(taskName, completed) {
   const tasks = parseJSONFromLocalStorage("tasks", []);
   const task = tasks.find((task) => task.title === taskName);
@@ -38,3 +30,24 @@ function createTaskListItem(task) {
 
   return taskListItem;
 }
+
+function renderTaskList(date) {
+  const taskList = document.querySelector(".taskList");
+  removeAllChildrenFromParent(taskList);
+
+  const tasks = parseJSONFromLocalStorage("tasks", []);
+
+  const filteredTasks = tasks.filter((task) => task.date === date);
+
+  const filteredListItems = filteredTasks.map((task) =>
+    createTaskListItem(task)
+  );
+
+  taskList.append(...filteredListItems);
+}
+
+function removeAllChildrenFromParent(parentElement) {
+  parentElement.innerHTML = "";
+}
+
+renderTaskList("today");
