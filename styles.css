@@ -82,16 +82,23 @@ h1 {
   cursor: pointer;
 }
 
-.taskNavLink {
+.dateSelector__radioLabel {
   color: var(--clr-text-passive);
   writing-mode: vertical-lr;
   transform: rotate(180deg);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  user-select: none;
 }
 
-.taskNavLink--active {
+.dateSelector__radio {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.dateSelector__radio:checked + .dateSelector__radioLabel {
   color: var(--clr-primary);
 }
 
